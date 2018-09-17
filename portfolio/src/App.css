@@ -7,7 +7,20 @@ body, html {
   height: 100%;
   margin: 0;
   background-size: cover;
+  background-attachment: fixed;
   font-family: 'Rubik';
+}
+
+.sectionStyle {
+  width: 100%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  background-color: greenyellow;
+  padding: 10px;
+  text-align: center;
 }
 
 
