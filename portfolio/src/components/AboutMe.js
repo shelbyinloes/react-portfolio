@@ -12,10 +12,30 @@ import "../App.css";
 
 
 class AboutMe extends Component {
-  render(){
+    constructor () {
+        super()
+        this.state = {
+            isHidden: true
+        }
+    }
+
+    toggleHidden () {
+        this.setState({
+            isHidden: !this.state.isHidden
+        })
+    }
+    render(){
+
     return(
-      <div class="sectionStyle" >
-        <h1 class="sectionHeader">About Me</h1>
+        <div class="sectionStyle" >
+            <h1 class="sectionHeader" onClick={this.toggleHidden.bind(this)}>About Me</h1>
+            {!this.state.isHidden && <AboutMeInfo />}
+        </div>
+    )}
+} 
+
+const AboutMeInfo = () => (
+    <div id="infoOpen">
         <h2>Education</h2>
             <h3>Austin Coding Academy</h3>
                 <li>Web Development, MERN stack</li>
@@ -30,8 +50,7 @@ class AboutMe extends Component {
             <h3>MERN stack</h3>
             <h3>JavaScript</h3>
             <h3>Version control with Git</h3>
-      </div>
-    )}
-} 
+    </div>
+)
 
   export default AboutMe;
