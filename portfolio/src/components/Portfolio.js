@@ -1,23 +1,31 @@
 import React, {Component} from "react";
 import "../App.css";
 
-// const headWrap = {
-//   marginTop: 0,
-//   height: "80px",
-//   width: "100%",
-//   position: "fixed",
-//   display: "flex",
-//   justifyContent: "flex-end"
-// }
-
-
 class Portfolio extends Component {
-  render(){
-    return(
-      <div class="sectionStyle">
-        <h1 class="sectionHeader">Portfolio</h1>
+    constructor () {
+        super()
+        this.handleClick = this.handleClick.bind(this)
+        this.state = { visible: false }
+    }
+
+    handleClick () {
+        this.setState(prev => ({ visible: !prev.visible}))
+    }
+
+    render(){
+        return(
+            <div class="sectionStyle" >
+                <h1 class="sectionHeader" onClick={this.handleClick}>Contact</h1>
+                <PortfolioInfo  visible={this.state.visible}/>
+            </div>
+        )}
+    } 
+
+    const PortfolioInfo = ({visible}) => (
+      <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
+        <h2>GITHUB</h2>
+            <h3>9376894078</h3>
       </div>
-    )}
-} 
+    )
 
   export default Portfolio;

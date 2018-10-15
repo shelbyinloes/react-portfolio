@@ -1,41 +1,34 @@
 import React, {Component} from "react";
 import "../App.css";
 
-// const headWrap = {
-//   marginTop: 0,
-//   height: "80px",
-//   width: "100%",
-//   position: "fixed",
-//   display: "flex",
-//   justifyContent: "flex-end"
+// const infoOpen = {
+//   transition: "transform 6000ms ease-in-out",
+//   color: "purple"
 // }
 
 
 class AboutMe extends Component {
     constructor () {
         super()
-        this.state = {
-            isHidden: true
-        }
+        this.handleClick = this.handleClick.bind(this)
+        this.state = { visible: false }
     }
 
-    toggleHidden () {
-        this.setState({
-            isHidden: !this.state.isHidden
-        })
+    handleClick () {
+        this.setState(prev => ({ visible: !prev.visible}))
     }
+
     render(){
+        return(
+            <div class="sectionStyle" >
+                <h1 class="sectionHeader" onClick={this.handleClick}>About Me</h1>
+                <AboutMeInfo  visible={this.state.visible}/>
+            </div>
+        )}
+    } 
 
-    return(
-        <div class="sectionStyle" >
-            <h1 class="sectionHeader" onClick={this.toggleHidden.bind(this)}>About Me</h1>
-            {!this.state.isHidden && <AboutMeInfo />}
-        </div>
-    )}
-} 
-
-const AboutMeInfo = () => (
-    <div id="infoOpen">
+    const AboutMeInfo = ({visible}) => (
+        <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
         <h2>Education</h2>
             <h3>Austin Coding Academy</h3>
                 <li>Web Development, MERN stack</li>
@@ -51,6 +44,6 @@ const AboutMeInfo = () => (
             <h3>JavaScript</h3>
             <h3>Version control with Git</h3>
     </div>
-)
+    )
 
   export default AboutMe;

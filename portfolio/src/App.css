@@ -23,3 +23,15 @@ body, html {
   text-align: center;
 }
 
+#infoOpen {
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 800ms ease-in-out;
+}
+
+#infoOpen.slideIn {
+  transform: translateX(0);
+}
+#infoOpen.slideOut {
+  transform: translateX(-100%);
+}
