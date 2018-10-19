@@ -50,21 +50,75 @@ class AboutMe extends Component {
           <Row>
             <Col md={7}>
                 <h1>EXPERIENCE</h1>
-                <h3>Austin Coding Academy - <strong>Teachers Assistant</strong></h3>
-                <h3>Airrosti - <strong>Certified Recovery Specialist</strong></h3>
+                <h3>Austin Coding Academy</h3>
+                    <h4>Teachers Assistant</h4>
+                    <li>Aided instructor through all aspects of Web 101 course</li>
+                    <li>Helped & mentored students both in person and remote via web conferencing</li>
+                    <li>Graded, commented, and merged homeworks/pull requests</li>
+                    <li>Troubleshot students problems with either code, environment set up, terminal/bash, and GitHub</li>
+                <h3>Airrosti</h3>
+                    <h4>Certified Recovery Specialist</h4>
+                    <li>Work one on one with patients in 30 minute blocks</li>
+                    <li>Educate patients on their current condition through demonstration and visuals</li>
+                    <li>Create a personlized exercise regimin for them to complete at home during treatment plan</li>
+                    <li>Detail my documentation to represent patients homework and progress</li>
+                    <li>Build external relationships and engagement via web, events, and marketing efforts</li>
             </Col>
             <Col md={5}>
                 <h1>EDUCATION</h1>
+                    <h3>University of Southern Mississippi</h3>
+                        <h5>Bachelors of Kinesiology, Minor in Psychology</h5>
+                        <li>GPA 3.6</li>
+                        <li>Graduated with Honors</li>
+                        <li>Lambda Sigma Honor Society - Care Package Chair</li>
+                        <li>Phi Mu Sorority - Academic Excellence Chair</li>
+                    <h3>Austin Coding Academy</h3>
+                        <h5>Full Stack Web Development - JavaScript</h5>
+                        <li>JavaScript - MERN Stack</li>
+                        <li>Completed all three courses offered (9 months)</li>
+                        <li>Built several full stack websites over three courses</li>
+                        <li>*see more in technologies section*</li>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                
             </Col>
-            <Col md={6}>
+            <Col md={4}>
                 <h1>TECHNOLOGIES</h1>
+                <Row>
+                    <Col md={5}>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>React</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                    </Col>
+                    <Col md={6}>
+                        <li>Node</li>
+                        <li>Bootstrap</li>
+                        <li>Mocha</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                    </Col>
+                </Row>
+
             </Col>            
-            <Col md={6}>
+            <Col md={8}>
                 <h1>REFERENCES</h1>
+                    <Row>
+                        <Col sm={6}>
+                            <h3>CEO - Austin Coding Academy</h3>
+                            <h4>Chris Lofton</h4>
+                            <h5>clofton@austincodingacademy.com</h5>
+                    </Col>
+                    <Col sm={6}>
+                            <h3>Airrosti Certified Provider</h3>
+                            <h4>Dr. Marcus Johnson</h4>
+                            <h5>drmjohnson@airrosti.com</h5>
+                    </Col>
+                    </Row>
             </Col>            
-            <Col md={6}>
-                <h1>CONTACT</h1>
-            </Col>
           </Row>
         </Grid>
         </div>
