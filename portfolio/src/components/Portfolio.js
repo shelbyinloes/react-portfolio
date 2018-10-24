@@ -14,8 +14,8 @@ class Portfolio extends Component {
 
     render(){
         return(
-            <div class="sectionStyle" >
-                <h1 class="sectionHeader" onClick={this.handleClick}>Portfolio</h1>
+            <div className="sectionStyle" >
+                <h1 className="sectionHeader" onClick={this.handleClick}>Portfolio</h1>
                 <PortfolioInfo  visible={this.state.visible}/>
             </div>
         )}

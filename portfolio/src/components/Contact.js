@@ -1,11 +1,6 @@
 import React, {Component} from "react";
 import "../App.css";
 
-// const infoOpen = {
-//   transition: "transform 6000ms ease-in-out",
-//   color: "purple"
-// }
-
 
 class Contact extends Component {
     constructor () {
@@ -20,8 +15,8 @@ class Contact extends Component {
 
     render(){
         return(
-            <div class="sectionStyle" >
-                <h1 class="sectionHeader" onClick={this.handleClick}>Contact</h1>
+            <div className="sectionStyle" >
+                <h1 className="sectionHeader" onClick={this.handleClick}>Contact</h1>
                 <ContactInfo  visible={this.state.visible}/>
             </div>
         )}
@@ -29,8 +24,11 @@ class Contact extends Component {
 
     const ContactInfo = ({visible}) => (
       <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
-        <h2>Shelby Inloes</h2>
-            <h3>9376894078</h3>
+        <h1>Shelby Inloes</h1>
+        <h3>contact@shelbyinloes.com</h3>
+        <h3><a href="https://www.linkedin.com/in/shelbyinloes/">LinkedIn</a></h3>
+        {/* need to fix this */}
+        <h5>Talk to you soon!</h5>
       </div>
     )
 
