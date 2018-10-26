@@ -1,6 +1,11 @@
 import React, {Component} from "react";
 import "../App.css";
+import {Grid, Row, Col} from "react-bootstrap";
 
+const headShotPicture = {
+    width: "100%",
+    padding: "30px"
+}
 
 class Contact extends Component {
     constructor () {
@@ -23,13 +28,24 @@ class Contact extends Component {
     } 
 
     const ContactInfo = ({visible}) => (
-      <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
-        <h1>Shelby Inloes</h1>
-        <h3>contact@shelbyinloes.com</h3>
-        <h3><a href="https://www.linkedin.com/in/shelbyinloes/">LinkedIn</a></h3>
-        {/* need to fix this */}
-        <h5>Talk to you soon!</h5>
-      </div>
+        <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
+        <Grid>
+          <Row>
+            <Col sm={5}>
+                <img src={require("../images/indeed-austin-day1-3071.jpg")} style={headShotPicture}/>
+            </Col>     
+            <Col sm={1}>
+                <img src={require("../images/indeed-austin-day1-3071.jpg")} style={headShotPicture}/>
+            </Col>     
+            <Col sm={6}>
+                <h2>Shelby Inloes</h2>
+                <h3>LinkedIn: </h3>
+                <h3>GitHub: </h3>
+                <h3>E-mail: contact@shelbyinloes.com</h3>
+             </Col>    
+          </Row>
+        </Grid>
+        </div>
     )
 
   export default Contact;

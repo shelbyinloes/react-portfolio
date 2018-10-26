@@ -5,12 +5,14 @@ import './App.css';
 import AboutMe from './components/AboutMe.js';
 import Portfolio from './components/Portfolio.js';
 import Contact from './components/Contact.js';
+import WorkInProgress from './components/WorkInProgress.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         {/* <Header /> */}
+        <WorkInProgress />
         <AboutMe />
         <Portfolio />
         <Contact />

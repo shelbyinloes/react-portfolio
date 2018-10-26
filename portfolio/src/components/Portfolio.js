@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import "../App.css";
+import {Grid, Row, Col} from "react-bootstrap";
 
 class Portfolio extends Component {
     constructor () {
@@ -22,10 +23,15 @@ class Portfolio extends Component {
     } 
 
     const PortfolioInfo = ({visible}) => (
-      <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
-        <h2>GITHUB</h2>
-            <h3>9376894078</h3>
-      </div>
+        <div id="infoOpen" className={visible ? 'slideIn' : 'slideOut'}>
+        <Grid>
+          <Row>
+            <Col sm={12} >
+              <h2>Checkout my <a href='https://github.com/shelbyinloes'>GitHub</a> for now!</h2>     
+            </Col>      
+          </Row>
+        </Grid>
+        </div>
     )
 
   export default Portfolio;
