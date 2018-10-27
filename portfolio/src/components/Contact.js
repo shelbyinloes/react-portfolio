@@ -32,10 +32,9 @@ class Contact extends Component {
         <Grid>
           <Row>
             <Col sm={5}>
-                <img src={require("../images/indeed-austin-day1-3071.jpg")} style={headShotPicture}/>
+                <img alt="Headshot of Shelby" src={require("../images/indeed-austin-day1-3071.jpg")} style={headShotPicture}/>
             </Col>     
             <Col sm={1}>
-                <img src={require("../images/indeed-austin-day1-3071.jpg")} style={headShotPicture}/>
             </Col>     
             <Col sm={6}>
                 <h2>Shelby Inloes</h2>
