@@ -11,7 +11,7 @@ class WorkInProgress extends Component {
               <Row>
                 <Col sm={2}></Col>
                 <Col sm={8} >
-                  <h3>I am working diligently on my portfolio! Changes occuring several times a week. Check back often for progress. Click to open each section!</h3>  
+                  <h3>I am working diligently on my portfolio! Changes occuring several times a week. Check back often for progress. Working best in desktop for now. Click to open each section!</h3>  
                 </Col>   
                 <Col sm={2}></Col>   
               </Row>
